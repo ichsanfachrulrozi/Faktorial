@@ -1,0 +1,28 @@
+
+package jurnal.pkg3;
+
+import java.util.*;
+
+public class Jurnal3 {
+
+    public static void main(String[] args) {
+        System.out.println("Input : ");
+        Scanner scn = new Scanner(System.in);
+        int input = scn.nextInt();
+        System.out.println("Output : ");
+        int faktor=1;
+        if (input>0)
+        {
+            for(int x=1;x<input;x++)
+            
+                faktor=faktor*(input-x);
+                faktor=faktor*input;
+            }
+            
+        else
+            faktor=1;
+            System.out.println(faktor);
+        
+    }
+    
+}
